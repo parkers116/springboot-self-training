@@ -1,12 +1,12 @@
 package com.example.demo;
 
-import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.bind.annotation.RequestMapping;
-//import org.springframework.stereotype.Controller;
-//import org.springframework.web.bind.annotation.GetMapping;
+//import org.springframework.web.bind.annotation.RestController;
+//import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 
-@RestController
-//@Controller
+//@RestController
+@Controller
 public class SpringbootHelloWorld {
 
 	public static void main(String[] args) {
@@ -14,19 +14,19 @@ public class SpringbootHelloWorld {
 
 	}
 	
-	@RequestMapping("/")
+//	@RequestMapping("/")
+//	public String hello(){
+//		return "Hello World!";
+//	}
+	
+	@GetMapping("/x")
 	public String hello(){
 		return "Hello World!";
 	}
 	
-//	@GetMapping("/x")
-//	public String hello(){
-//		return "Hello World!";
-//	}
-//	
-//	@GetMapping("/index")
-//	public String index() {
-//		return "index";
-//	}
+	@GetMapping("/index")
+	public String index() {
+		return "index";
+	}
 
 }
