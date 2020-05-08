@@ -13,17 +13,17 @@ public class SpringbootHelloWorld {
 		// TODO Auto-generated method stub
 
 	}
-	
+
 //	@RequestMapping("/")
 //	public String hello(){
 //		return "Hello World!";
 //	}
-	
+
 	@GetMapping("/x")
-	public String hello(){
+	public String hello() {
 		return "Hello World!";
 	}
-	
+
 	@GetMapping("/index")
 	public String index() {
 		return "index";
